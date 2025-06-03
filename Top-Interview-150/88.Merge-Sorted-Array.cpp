@@ -58,7 +58,7 @@ class Solution {
                 nums1[k] = nums2[j];
                 j--;
             }
-            k++;
+            k--;
         }
 
         // In case of left over elements in nums2 only because nums1 values are already there
