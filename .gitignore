@@ -1,0 +1,16 @@
+# VS Code config
+.vscode/
+
+# C++ object files
+*.o
+
+# Compiled binary files
+a.out
+*.out
+*.exe
+
+# MacOS junk
+.DS_Store
+
+# Backup or temp files
+*~
