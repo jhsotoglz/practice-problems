@@ -63,6 +63,13 @@ class Solution {
             }
             k++;
         }
+
+        // In case of left over elements in nums2 only because nums1 values are already there
+        while (j >= 0) {
+            nums1[k] = nums2[j];
+            j--;
+            k--;
+        }
     }
 };
 
