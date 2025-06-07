@@ -84,8 +84,9 @@ int main() {
     return 0;
 }
 
-// Your implementation goes below this line
 int removeElement(vector<int>& nums, int val) {
-    // TODO: Implement your solution here for practice
+    
+    // Write the solution here!!!
+
     return -1; // placeholder
 }
