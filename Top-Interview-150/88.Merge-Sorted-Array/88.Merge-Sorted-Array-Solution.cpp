@@ -46,7 +46,27 @@ using namespace std;
 class Solution {
     public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        // Write the solution here!!!
+        int i = m - 1;      // Points to the end of valid nums1 values
+        int j = n - 1;      // Points to the end of valid nums2 values
+        int k = m + n - 1;  // Pointer to the end of nums1 array (This is where the new merged elements will be added)
+
+        while (i >= 0 && j >= 0) {
+            if (nums1[i] > nums2[j]) {
+                nums1[k] = nums1[i];
+                i--;
+            } else {
+                nums1[k] = nums2[j];
+                j--;
+            }
+            k--;
+        }
+
+        // In case of left over elements in nums2 only because nums1 values are already there
+        while (j >= 0) {
+            nums1[k] = nums2[j];
+            j--;
+            k--;
+        }
     }
 };
 
