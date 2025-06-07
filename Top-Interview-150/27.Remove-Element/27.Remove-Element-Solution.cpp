@@ -50,7 +50,6 @@
 //     0 <= val <= 100
 
 
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -58,35 +57,53 @@
 
 using namespace std;
 
-// Declare your function here (implement it separately to practice)
-int removeElement(vector<int>& nums, int val);
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int k = 0;
+        for (int i = 0; i < nums.size(); ++i) {
+            if (nums[i] != val) {
+                nums[k++] = nums[i];
+            }
+        }
+        return k;
+    }
+};
+
+void printVector(const vector<int>& vec, int k) {
+    cout << "[";
+    for (int i = 0; i < k; ++i) {
+        cout << vec[i];
+        if (i < k - 1) cout << ", ";
+    }
+    cout << "]" << endl;
+}
 
 int main() {
-    // Sample test case
     vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
     int val = 2;
     vector<int> expectedNums = {0, 1, 4, 0, 3}; // Expected first k elements (order doesn't matter)
 
-    int k = removeElement(nums, val); // Call your implementation
+    Solution sol;
+    int k = sol.removeElement(nums, val);
 
-    // Check length
-    assert(k == expectedNums.size());
-
-    // Sort both for comparison (order doesn't matter in output)
+    // Sort for comparison (order doesn't matter)
     sort(nums.begin(), nums.begin() + k);
     sort(expectedNums.begin(), expectedNums.end());
 
+    cout << "Returned k = " << k << endl;
+    cout << "Modified nums (first k elements): ";
+    printVector(nums, k);
+
+    cout << "Expected nums: ";
+    printVector(expectedNums, expectedNums.size());
+
+    // Assertions to verify correctness
+    assert(k == expectedNums.size());
     for (int i = 0; i < k; ++i) {
         assert(nums[i] == expectedNums[i]);
     }
 
-    cout << "All assertions passed. Test case succeeded!" << endl;
+    cout << "Correct!" << endl;
     return 0;
-}
-
-int removeElement(vector<int>& nums, int val) {
-    
-    // Write the solution here!!!
-
-    return -1; // placeholder
 }
