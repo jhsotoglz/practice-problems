@@ -29,7 +29,7 @@ using namespace std;
 class Solution {
 public:
     bool canJump(vector<int>& nums) {
-        // Write your solution here
+        // Write your solution here!!
     }
 };
 
