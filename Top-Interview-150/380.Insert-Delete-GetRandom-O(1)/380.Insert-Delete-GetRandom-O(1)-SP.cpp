@@ -41,26 +41,24 @@
 using namespace std;
 
 class RandomizedSet {
-private:
-    unordered_map<int, int> valToIndex; // Mapea el valor al índice en el vector
-    vector<int> data;                   // Almacena los elementos actuales
 
 public:
     RandomizedSet() {
-        // Escribe tu solución aquí
+       // Escribe tu solución aquí!!!
     }
 
     bool insert(int val) {
-        // Escribe tu solución aquí
+        // Escribe tu solución aquí!!!
     }
 
     bool remove(int val) {
-        // Escribe tu solución aquí
+        // Escribe tu solución aquí!!!
     }
 
     int getRandom() {
-        // Escribe tu solución aquí
+        // Escribe tu solución aquí!!!
     }
+       
 };
 
 // Función de prueba para demostrar el comportamiento
