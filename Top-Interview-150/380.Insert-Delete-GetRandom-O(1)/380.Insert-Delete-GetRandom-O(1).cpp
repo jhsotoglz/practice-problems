@@ -41,9 +41,6 @@
 using namespace std;
 
 class RandomizedSet {
-private:
-    unordered_map<int, int> valToIndex;
-    vector<int> data;
 
 public:
     RandomizedSet() {
