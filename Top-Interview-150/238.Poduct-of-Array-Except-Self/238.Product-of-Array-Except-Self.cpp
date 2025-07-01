@@ -1,27 +1,27 @@
-// Dado un arreglo de enteros `nums`, devuelve un arreglo `respuesta` tal que
-// `respuesta[i]` sea igual al producto de todos los elementos de `nums` excepto `nums[i]`.
+// Given an integer array `nums`, return an array `answer` such that
+// `answer[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
 
-// El producto de cualquier prefijo o sufijo del arreglo está garantizado que cabe en un entero de 32 bits.
+// The product of any prefix or suffix of the array is guaranteed to fit in a 32-bit integer.
 
-// Debes escribir un algoritmo que funcione en tiempo O(n) y **sin utilizar la operación de división**.
+// You must write an algorithm that runs in O(n) time and **without using the division operation**.
 
 
-// Ejemplo 1:
-// Entrada: nums = [1,2,3,4]
-// Salida: [24,12,8,6]
+// Example 1:
+// Input: nums = [1,2,3,4]
+// Output: [24,12,8,6]
 
-// Ejemplo 2:
-// Entrada: nums = [-1,1,0,-3,3]
-// Salida: [0,0,9,0,0]
+// Example 2:
+// Input: nums = [-1,1,0,-3,3]
+// Output: [0,0,9,0,0]
 
-// Restricciones:
+// Constraints:
 //     2 <= nums.length <= 10^5
 //     -30 <= nums[i] <= 30
-//     Se garantiza que el resultado cabe en un entero de 32 bits.
+//     The result is guaranteed to fit in a 32-bit integer.
 
-// Nota adicional:
-// ¿Puedes resolver el problema usando solo O(1) de espacio extra?
-// (El arreglo de salida no cuenta como espacio extra para el análisis de complejidad espacial)
+// Follow-up:
+// Can you solve the problem using only O(1) extra space?
+// (The output array does not count as extra space for the space complexity analysis.)
 
 #include <iostream>
 #include <vector>
@@ -32,11 +32,11 @@ using namespace std;
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
-        // Escribe tu solución aquí
+        // Write your solution here
     }
 };
 
-// Función auxiliar para mostrar un vector
+// Helper function to print a vector
 void printVector(const vector<int>& vec) {
     cout << "[";
     for (int i = 0; i < vec.size(); ++i) {
@@ -46,28 +46,28 @@ void printVector(const vector<int>& vec) {
     cout << "]" << endl;
 }
 
-// Función auxiliar para ejecutar y validar casos de prueba
-void runTest(vector<int> nums, vector<int> esperado) {
+// Helper function to run and validate test cases
+void runTest(vector<int> nums, vector<int> expected) {
     Solution sol;
-    vector<int> resultado = sol.productExceptSelf(nums);
+    vector<int> result = sol.productExceptSelf(nums);
 
-    cout << "Entrada: ";
+    cout << "Input: ";
     printVector(nums);
-    cout << "Salida: ";
-    printVector(resultado);
-    cout << "Esperado: ";
-    printVector(esperado);
+    cout << "Output: ";
+    printVector(result);
+    cout << "Expected: ";
+    printVector(expected);
 
-    assert(resultado == esperado);
-    cout << "Prueba superada.\n" << endl;
+    assert(result == expected);
+    cout << "Test passed.\n" << endl;
 }
 
 int main() {
-    // Casos de prueba de ejemplo
+    // Example test cases
     runTest({1, 2, 3, 4}, {24, 12, 8, 6});
     runTest({-1, 1, 0, -3, 3}, {0, 0, 9, 0, 0});
 
-    // Puedes agregar más casos personalizados aquí
+    // Add more custom test cases if needed
     // runTest({...}, {...});
 
     return 0;
