@@ -33,7 +33,7 @@ using namespace std;
 class Solution {
 public:
     int jump(vector<int>& nums) {
-        // Escribe tu solución aquí
+        // Escribe tu solución aquí!!
     }
 };
 
