@@ -10,7 +10,6 @@
 
 // If a solution exists, it is guaranteed to be unique.
 
-
 // Example 1:
 // Input: gas = [1,2,3,4,5], cost = [3,4,5,1,2]
 // Output: 3
@@ -27,7 +26,6 @@
 // Output: -1
 // Explanation: No starting point can complete the loop.
 
-
 // Constraints:
 //   n == gas.length == cost.length
 //   1 <= n <= 10^5
@@ -40,30 +38,64 @@
 
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
-        // Write your solution here!!
+    int canCompleteCircuit(vector<int> &gas, vector<int> &cost)
+    {
+
+        int totalGas = 0;
+        int totalCost = 0;
+        int start = 0;
+        int tank = 0;
+
+        for (int i = 0; i < gas.size(); ++i)
+        {
+            totalGas += gas[i];
+            totalCost += cost[i];
+            tank += gas[i] - cost[i];
+
+            // If tank is negative, can't reach next station from current start
+            if (tank < 0)
+            {
+                start = i + 1;
+                tank = 0;
+            }
+        }
+
+        if (totalGas >= totalCost)
+        {
+            return start;
+        }
+        else
+        {
+            return -1;
+        }
     }
 };
 
 // Helper function to run and validate test cases
-void runTest(vector<int> gas, vector<int> cost, int expected) {
+void runTest(vector<int> gas, vector<int> cost, int expected)
+{
     Solution sol;
     int result = sol.canCompleteCircuit(gas, cost);
 
     cout << "Gas: ";
-    for (int g : gas) cout << g << " ";
+    for (int g : gas)
+        cout << g << " ";
     cout << "\nCost: ";
-    for (int c : cost) cout << c << " ";
+    for (int c : cost)
+        cout << c << " ";
     cout << "\nOutput: " << result << endl;
     cout << "Expected: " << expected << endl;
 
     assert(result == expected);
-    cout << "Test passed.\n" << endl;
+    cout << "Test passed.\n"
+         << endl;
 }
 
-int main() {
+int main()
+{
     // Example test cases
     runTest({1, 2, 3, 4, 5}, {3, 4, 5, 1, 2}, 3);
     runTest({2, 3, 4}, {3, 4, 3}, -1);
