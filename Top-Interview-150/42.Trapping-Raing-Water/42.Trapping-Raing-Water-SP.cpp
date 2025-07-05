@@ -1,20 +1,19 @@
-// Given `n` non-negative integers representing an elevation map,
-// where the width of each bar is 1,
-// compute how much water it can trap after raining.
+// Se te da un arreglo de `n` enteros no negativos que representan un mapa de elevación,
+// donde el ancho de cada barra es 1.
+// Calcula cuánta agua se puede atrapar después de llover.
 
 
-// Example 1:
-// Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
-// Output: 6
-// Explanation:
-// The above elevation map is represented by the array.
-// In this case, 6 units of rain water are being trapped between the bars.
+// Ejemplo 1:
+// Entrada: height = [0,1,0,2,1,0,1,3,2,1,2,1]
+// Salida: 6
+// Explicación:
+// El mapa de elevación representado por el arreglo puede atrapar 6 unidades de agua entre las barras.
 
-// Example 2:
-// Input: height = [4,2,0,3,2,5]
-// Output: 9
+// Ejemplo 2:
+// Entrada: height = [4,2,0,3,2,5]
+// Salida: 9
 
-// Constraints:
+// Restricciones:
 //   n == height.length
 //   1 <= n <= 2 * 10^4
 //   0 <= height[i] <= 10^5
@@ -28,31 +27,31 @@ using namespace std;
 class Solution {
 public:
     int trap(vector<int>& height) {
-        // Write your solution here
+        // Escribe tu solución aquí!!!
     }
 };
 
-// Helper function to run and validate test cases
-void runTest(vector<int> height, int expected) {
+// Función auxiliar para ejecutar y validar casos de prueba
+void ejecutarPrueba(vector<int> height, int esperado) {
     Solution sol;
-    int result = sol.trap(height);
+    int resultado = sol.trap(height);
 
-    cout << "Height: ";
+    cout << "Alturas: ";
     for (int h : height) cout << h << " ";
-    cout << "\nOutput: " << result << endl;
-    cout << "Expected: " << expected << endl;
+    cout << "\nSalida: " << resultado << endl;
+    cout << "Esperado: " << esperado << endl;
 
-    assert(result == expected);
-    cout << "Test passed.\n" << endl;
+    assert(resultado == esperado);
+    cout << "Prueba superada.\n" << endl;
 }
 
 int main() {
-    // Example test cases
-    runTest({0,1,0,2,1,0,1,3,2,1,2,1}, 6);
-    runTest({4,2,0,3,2,5}, 9);
+    // Casos de prueba de ejemplo
+    ejecutarPrueba({0,1,0,2,1,0,1,3,2,1,2,1}, 6);
+    ejecutarPrueba({4,2,0,3,2,5}, 9);
 
-    // Add more test cases if needed
-    // runTest({...}, ...);
+    // Puedes agregar más casos de prueba si lo deseas
+    // ejecutarPrueba({...}, ...);
 
     return 0;
 }
