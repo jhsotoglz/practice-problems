@@ -22,14 +22,26 @@ Space Complexity: O(n)
 ------------------------
 */
 
-class Solution {
+class Solution
+{
 public:
-    bool hasDuplicate(vector<int>& nums) {
-        // Write your solution here!!!
+    bool hasDuplicate(vector<int> &nums)
+    {
+        unordered_set<int> seen;
+        for (int num : nums)
+        {
+            if (seen.find(num) != seen.end())
+            {
+                return true; // found a duplicate
+            }
+            seen.insert(num); // add the number to the set
+        }
+        return false; // no duplicates found after full loop
     }
 };
 
-int main() {
+int main()
+{
     Solution solution;
 
     vector<int> test1 = {1, 2, 3, 3};
