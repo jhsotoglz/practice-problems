@@ -1,43 +1,43 @@
 /*
 ------------------------
-Valid Anagram
+Anagrama Válido
 
-Given two strings s and t, return true if the two strings are anagrams of each other, otherwise return false.
+Dadas dos cadenas de caracteres s y t, devuelve true si ambas cadenas son anagramas entre sí; de lo contrario, devuelve false.
 
-An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
+Un anagrama es una cadena que contiene exactamente los mismos caracteres que otra cadena, pero el orden de los caracteres puede ser diferente.
 
-Example 1:
-Input: s = "racecar", t = "carrace"
-Output: true
+Ejemplo 1:
+Entrada: s = "racecar", t = "carrace"
+Salida: true
 
-Example 2:
-Input: s = "jar", t = "jam"
-Output: false
+Ejemplo 2:
+Entrada: s = "jar", t = "jam"
+Salida: false
 
-Constraints:
-- s and t consist of lowercase English letters.
+Restricciones:
+- s y t consisten únicamente en letras minúsculas del alfabeto inglés.
 
-Time Complexity: O(n)
-Space Complexity: O(n)
+Complejidad de Tiempo: O(n)
+Complejidad de Espacio: O(n)
 ------------------------
 */
 
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        // Write your solution here!!!
+        // ¡Escribe tu solución aquí!
     }
 };
 
 int main() {
-    Solution solution;
+    Solution solucion;
 
     string s1 = "racecar", t1 = "carrace";
     string s2 = "jar", t2 = "jam";
 
     cout << boolalpha;
-    cout << "Test 1: " << solution.isAnagram(s1, t1) << endl; // true
-    cout << "Test 2: " << solution.isAnagram(s2, t2) << endl; // false
+    cout << "Prueba 1: " << solucion.isAnagram(s1, t1) << endl; // true
+    cout << "Prueba 2: " << solucion.isAnagram(s2, t2) << endl; // false
 
     return 0;
 }
