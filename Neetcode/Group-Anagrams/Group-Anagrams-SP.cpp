@@ -1,30 +1,31 @@
+
 /*
 ------------------------
-Group Anagrams
+Agrupar Anagramas
 
-Given an array of strings strs, group all anagrams together into sublists. You may return the output in any order.
+Dado un arreglo de cadenas `strs`, agrupa todos los anagramas juntos en sublistas. Puedes devolver la salida en cualquier orden.
 
-An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
+Un anagrama es una cadena que contiene exactamente los mismos caracteres que otra cadena, pero el orden de los caracteres puede ser diferente.
 
-Example 1:
-Input: strs = ["act", "pots", "tops", "cat", "stop", "hat"]
-Output: [["hat"], ["act", "cat"], ["stop", "pots", "tops"]]
+Ejemplo 1:
+Entrada: strs = ["act", "pots", "tops", "cat", "stop", "hat"]
+Salida: [["hat"], ["act", "cat"], ["stop", "pots", "tops"]]
 
-Example 2:
-Input: strs = ["x"]
-Output: [["x"]]
+Ejemplo 2:
+Entrada: strs = ["x"]
+Salida: [["x"]]
 
-Example 3:
-Input: strs = [""]
-Output: [[""]]
+Ejemplo 3:
+Entrada: strs = [""]
+Salida: [[""]]
 
-Constraints:
+Restricciones:
 - 1 <= strs.length <= 1000
 - 0 <= strs[i].length <= 100
-- strs[i] consists of lowercase English letters
+- strs[i] está compuesto por letras minúsculas del alfabeto inglés
 
-Time Complexity: O(n * k log k), where n = number of strings and k = max string length
-Space Complexity: O(n * k)
+Complejidad Temporal: O(n * k log k), donde n = número de cadenas y k = longitud máxima de una cadena  
+Complejidad Espacial: O(n * k)
 ------------------------
 */
 
@@ -33,7 +34,7 @@ class Solution
 public:
     vector<vector<string>> groupAnagrams(vector<string> &strs)
     {
-        // Write your solution here!!!
+        // ¡Escribe tu solución aquí!
     }
 };
 
@@ -59,11 +60,11 @@ int main()
         }
     };
 
-    cout << "Result 1:" << endl;
+    cout << "Resultado 1:" << endl;
     printGroups(result1);
-    cout << "\nResult 2:" << endl;
+    cout << "\nResultado 2:" << endl;
     printGroups(result2);
-    cout << "\nResult 3:" << endl;
+    cout << "\nResultado 3:" << endl;
     printGroups(result3);
 
     return 0;
