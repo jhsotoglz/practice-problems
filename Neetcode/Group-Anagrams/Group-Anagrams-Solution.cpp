@@ -1,3 +1,10 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <unordered_map>
+#include <algorithm>
+using namespace std;
+
 /*
 ------------------------
 Group Anagrams
@@ -33,7 +40,22 @@ class Solution
 public:
     vector<vector<string>> groupAnagrams(vector<string> &strs)
     {
-        // Write your solution here!!!
+        unordered_map<string, vector<string>> groups;
+
+        for (string word : strs)
+        {
+            string key = word;
+            sort(key.begin(), key.end()); // sorted characters act as key
+            groups[key].push_back(word);
+        }
+
+        vector<vector<string>> result;
+        for (auto &entry : groups)
+        {
+            result.push_back(entry.second);
+        }
+
+        return result;
     }
 };
 
