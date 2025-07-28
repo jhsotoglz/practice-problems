@@ -48,10 +48,6 @@
 //     nums está ordenado en orden no decreciente
 
 
-#include <iostream>
-#include <vector>
-#include <cassert>
-
 using namespace std;
 
 class Solution {

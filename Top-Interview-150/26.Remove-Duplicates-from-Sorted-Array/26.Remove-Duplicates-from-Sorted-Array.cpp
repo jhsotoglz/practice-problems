@@ -47,10 +47,6 @@
 //     nums is sorted in non-decreasing order
 
 
-#include <iostream>
-#include <vector>
-#include <cassert>
-
 using namespace std;
 
 class Solution {
