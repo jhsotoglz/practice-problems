@@ -21,10 +21,6 @@
 //     1 <= prices.length <= 10^5
 //     0 <= prices[i] <= 10^4
 
-#include <iostream>
-#include <vector>
-#include <cassert>
-
 using namespace std;
 
 class Solution {
