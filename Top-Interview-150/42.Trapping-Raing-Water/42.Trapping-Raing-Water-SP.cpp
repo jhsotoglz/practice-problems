@@ -18,9 +18,11 @@
 //   1 <= n <= 2 * 10^4
 //   0 <= height[i] <= 10^5
 
-#include <iostream>
-#include <vector>
-#include <cassert>
+///////////
+// Imports:
+
+///////////
+
 
 using namespace std;
 
