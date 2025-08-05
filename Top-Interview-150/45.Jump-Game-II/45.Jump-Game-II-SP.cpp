@@ -25,7 +25,6 @@
 //     Siempre puedes llegar al último índice
 
 
-#include <vector>
 #include <cassert>
 
 using namespace std;
