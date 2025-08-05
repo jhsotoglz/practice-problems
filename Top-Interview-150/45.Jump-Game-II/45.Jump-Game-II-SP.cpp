@@ -24,7 +24,7 @@
 //     0 <= nums[i] <= 1000
 //     Siempre puedes llegar al último índice
 
-#include <iostream>
+
 #include <vector>
 #include <cassert>
 
