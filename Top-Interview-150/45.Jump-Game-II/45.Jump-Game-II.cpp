@@ -24,7 +24,6 @@
 //     0 <= nums[i] <= 1000
 //     You can always reach the last index
 
-#include <vector>
 #include <cassert>
 
 using namespace std;
