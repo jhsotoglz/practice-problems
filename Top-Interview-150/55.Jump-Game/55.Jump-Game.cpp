@@ -20,7 +20,6 @@
 //     1 <= nums.length <= 10^4
 //     0 <= nums[i] <= 10^5
 
-#include <vector>
 #include <cassert>
 
 using namespace std;
