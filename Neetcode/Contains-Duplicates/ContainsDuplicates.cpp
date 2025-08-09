@@ -18,7 +18,6 @@ Space Complexity: O(n)
 */
 
 #include <iostream>
-#include <vector>
 using namespace std;
 
 class Solution {
