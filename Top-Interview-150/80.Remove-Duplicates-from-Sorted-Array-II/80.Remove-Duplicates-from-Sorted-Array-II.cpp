@@ -49,7 +49,6 @@
 //     -10^4 <= nums[i] <= 10^4
 //     nums is sorted in non-decreasing order
 
-#include <cassert>
 
 using namespace std;
 
