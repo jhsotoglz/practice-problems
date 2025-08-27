@@ -49,9 +49,6 @@
 //     -10^4 <= nums[i] <= 10^4
 //     nums is sorted in non-decreasing order
 
-
-using namespace std;
-
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
