@@ -39,9 +39,10 @@
 
 // Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
-# include <iostream>
-# include <vector>
-using namespace std;
+///////////
+// Imports:
+
+///////////
 
 class Solution {
     public:
