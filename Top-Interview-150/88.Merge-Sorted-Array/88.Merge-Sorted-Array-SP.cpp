@@ -42,9 +42,10 @@
 
 // Pregunta adicional: ¿Puedes diseñar un algoritmo que funcione en tiempo O(m + n)?
 
-# include <iostream>
-# include <vector>
-using namespace std;
+///////////
+// Imports:
+
+///////////
 
 class Solution {
     public:
